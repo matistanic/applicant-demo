@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <nav class="mynav navbar navbar-expand-lg">
+  <header class="hero">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="assets/img/viajes.svg" style="height: 40px;" alt="Logo Viajes Chile"></a>
             <span class="text-white">Viajes Chile</span>
@@ -45,14 +46,7 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -110,14 +104,13 @@
     </div>
   </section>  
 
-  <header class="hero text-light text-center pt-5 mt-5">
 
   </header>
 
   <section id="about" class="container-fluid py-3 text-center d-none d-md-block text-white">
     <div>
       <h2>¿Quiénes Somos?</h2>
-      <hr>
+      <hr class="bg-info" style="height: 2px">
       <div class="row">
         <div class="col-4">
             <div id="rectangle" class="mb-2"><i class="fa-solid fa-2x fa-plane mt-1"></i></div>
@@ -135,10 +128,10 @@
     </div>
   </section>
 
-  <section id="work" class="container-fluid py-3 text-center d-none d-md-block text-white">
+  <section id="work" class="container-fluid py-3 text-center text-white">
     <div>
         <h2>Destacados</h2>
-        <hr>
+        <hr class="bg-info" style="height: 2px">
         <div class="row">
             <div class="col-sm-3">
                 <div class="card">
@@ -181,33 +174,17 @@
 
   </section>
 
-  <section id="contact" class="container-fluid my-5">
-    <h2 class="display-3 font-weight-bold text-center my-4">Contáctame</h2>
-    <p class="text-center my-4">Si tienes alguna pregunta, comentario, o algo que me quieras decir, ¡no dudes en contactarme!</p>
-    <div class="typeform-widget" data-url="https://matiasmuller.typeform.com/to/fzK8tw" style="width: 100%; height: 500px;"></div>
-    <script>
-      (function() {
-        var qs, js, q, s, d = document,
-          gi = d.getElementById,
-          ce = d.createElement,
-          gt = d.getElementsByTagName,
-          id = "typef_orm",
-          b = "https://embed.typeform.com/";
-        if (!gi.call(d, id)) {
-          js = ce.call(d, "script");
-          js.id = id;
-          js.src = b + "embed.js";
-          q = gt.call(d, "script")[0];
-          q.parentNode.insertBefore(js, q)
-        }
-      })()
-    </script>
-    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a
-        href="https://admin.typeform.com/signup?utm_campaign=fzK8tw&utm_source=typeform.com-14114614-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a>
-    </div>
+  <section id="contact" class="container-fluid text-center text-white my-5">
+    <h2>Contacto</h2>
+    <hr class="bg-info" style="height: 2px">
+    <div data-tf-widget="c0THmO5r" 
+    data-tf-iframe-props="title=Prueba HTML" 
+    data-tf-medium="snippet" 
+    style="width:100%;height:400px;"></div>
+    <script src="//embed.typeform.com/next/embed.js"></script>
   </section>
 
-  <footer class="bg-info text-center text-light py-5">
+  <footer class="bg-info text-center text-light py-3">
     <div class="row">
       <div class="col-6">
       <h2 class="footerh2">Viajes Chile</h2>
