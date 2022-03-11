@@ -3,7 +3,7 @@ body {
     background-color: black;
 }
 .navbar {
-    position:absolute;
+    position: fixed;
     top:0;
     z-index:10;
     background: none;
@@ -33,6 +33,45 @@ body {
     height: 40px;
     background: rgb(0, 225, 255);
 }
-.footerh2 {
+.tultip {
+    width: 100%;
+    height: 40px;
+}
+.footer-text {
     font-weight: 700;
+    display: inline-flex;
+    margin-left: 100px;
+}
+.footer-list {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;  
+    position: relative;
+    display: flex;
+    padding-left: 60%;
+}
+#quienes-somos {
+    margin: 50px 0;
+}
+#destacados {
+    margin: 50px 0;
+}
+#footer {
+    display: flex;
+}
+.card {
+    height: 100%; 
+}
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.modal-content {
+    background-color: black;
+    color: aqua;
+}
+.mipopover {
+    background-color: black;
+    color: aqua;
 }

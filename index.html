@@ -19,162 +19,146 @@
 </head>
 
 <body>
-  <header class="hero">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/img/viajes.svg" style="height: 40px;" alt="Logo Viajes Chile"></a>
-            <span class="text-white">Viajes Chile</span>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-
-
-
-  <!-- <nav class="mynav navbar navbar-expand-lg fixed-top text-white navbar-dark bg-success">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="assets/img/viajes.svg" style="height: 40px;" alt="Logo Viajes Chile"></a>
-      <span class="text-white">Viajes Chile</span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg px-5">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#"><img src="assets/img/viajes.svg" style="height: 40px;" alt="Logo Viajes Chile">Viajes Chile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-white" href="#about">Inicio<span class="sr-only">(current)</span></a>
+            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#experience">Quienes Somos</a>
+            <a class="nav-link text-white" href="#quienes-somos">Quienes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#work">Destacados</a>
+            <a class="nav-link text-white" href="#destacados">Destacados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">Contacto</a>
+            <a class="nav-link text-white" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav> -->
+  </nav>
   
   <section>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="assets/img/carousel1.jpg" class="d-block w-100 img-fluid" alt="...">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100 img-fluid" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="assets/img/carousel2.jpg" class="d-block w-100 img-fluid" alt="...">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100 img-fluid" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="assets/img/carousel3.jpg" class="d-block w-100 img-fluid" alt="...">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100 img-fluid" alt="...">
         </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-        </button>
+      </button>
     </div>
   </section>  
 
+    
+  <header class="hero">
+    <section id="quienes-somos" class="container-fluid py-3 px-5 text-center d-none d-md-block">
+      <div>
+        <h2 class="text-white">¿Quiénes Somos?</h2>
+        <a href="#myModal" class="btn btn-lg btn-info text-white" data-bs-toggle="modal">Aquí te contamos más</a>
 
-  </header>
-
-  <section id="about" class="container-fluid py-3 text-center d-none d-md-block text-white">
-    <div>
-      <h2>¿Quiénes Somos?</h2>
-      <hr class="bg-info" style="height: 2px">
-      <div class="row">
-        <div class="col-4">
-            <div id="rectangle" class="mb-2"><i class="fa-solid fa-2x fa-plane mt-1"></i></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Viajes Chile</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Somos la mejor agencia turística para conocer Chile, además como puedes ver también tenemos la mejor página web del mundo, contrata nuestros servicios y nunca te arrepentirás.</p>
+                        <p class="text-secondary"><small>La humildad no es lo nuestro</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn btn-outline-info" data-bs-dismiss="modal">Volver atrás</button>
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="popover" title="Es muy sencillo" data-bs-content="anda a la sección Contacto y déjanos tu mail">quiero saber más</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
-            <div id="rectangle" class="mb-2"><i class="fa-solid fa-2x fa-suitcase mt-1"></i></div>
-        </div>
-        <div class="col-4">
-            <div id="rectangle" class="mb-2"><i class="fa-solid fa-2x fa-clock-rotate-left mt-1"></i></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
+        <hr class="bg-info" style="height: 2px">
+        <div class="row">
+          <div class="col-4">
+            <button type="button" class="btn btn-info text-white tultip" data-bs-toggle="tooltip" title="Viaja en primera clase!"><i class="fa-solid fa-2x fa-plane"></i></button>
+            <p class="text-start text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
+          </div>
+          <div class="col-4">
+              <p class="text-start text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
+              <button type="button" class="btn btn-info text-white tultip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Agarra tus maletas!"><i class="fa-solid fa-2x fa-suitcase"></i></button>
+          </div>
+          <div class="col-4">
+              <button type="button" class="btn btn-info text-white tultip" data-bs-toggle="tooltip" title="No pierdas más tiempo!"><i class="fa-solid fa-2x fa-clock-rotate-left"></i></button>
+              <p class="text-start text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </header>
+  
 
-  <section id="work" class="container-fluid py-3 text-center text-white">
+  <section id="destacados" class="container-fluid py-3 px-5 text-center text-white">
     <div>
         <h2>Destacados</h2>
         <hr class="bg-info" style="height: 2px">
         <div class="row">
             <div class="col-sm-3">
-                <div class="card">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                    <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+              <div class="card">
+                <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-info">
+                  <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
+              </div>
             </div>
             <div class="col-sm-3">
-                <div class="card">
-                    <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Consectetur adipisicing elit</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+              <div class="card">
+                <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-info">
+                  <h5 class="card-title">Consectetur adipisicing elit</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
+              </div>
             </div>
             <div class="col-sm-3">
-                <div class="card">
-                    <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+              <div class="card">
+                <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-info">
+                  <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
+              </div>
             </div>
             <div class="col-sm-3">
-                <div class="card">
-                    <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Ut enim ad minim veniam</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>        
+              <div class="card">
+                <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-info">
+                  <h5 class="card-title">Ut enim ad minim veniam</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>        
             </div>
         </div>
     </div>
-
   </section>
 
-  <section id="contact" class="container-fluid text-center text-white my-5">
+  <section id="contacto" class="container-fluid text-center text-white my-5 px-5">
     <h2>Contacto</h2>
     <hr class="bg-info" style="height: 2px">
     <div data-tf-widget="c0THmO5r" 
@@ -184,23 +168,23 @@
     <script src="//embed.typeform.com/next/embed.js"></script>
   </section>
 
-  <footer class="bg-info text-center text-light py-3">
-    <div class="row">
-      <div class="col-6">
-      <h2 class="footerh2">Viajes Chile</h2>
+  <footer id="footer" class="bg-info text-center text-light py-3">
+      <div>
+        <h2 class="footer-text">Viajes Chile</h2>
       </div>
-      <div class="col-6">
-      <a href="https://github.com/matistanic"><i class="fab fa-github-square fa-3x text-white"></i></a>
-      <a href="https://www.facebook.com/matiblow"><i class="fa fa-linkedin-square fa-3x text-white"></i></a>      
-      <a href="https://www.facebook.com/matiblow"><i class="fab fa-twitter-square fa-3x mx-3 text-white"></i></a>
-      <a href="https://www.instagram.com/mati_mailo"><i class="fab fa-facebook fa-3x text-white"></i></a>
+      <div class="footer-list">
+          <a href="https://github.com/matistanic"><i class="fab fa-github-square fa-3x text-white mx-2"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa fa-linkedin-square fa-3x text-white mx-2"></i></a>
+          <a href="https://www.facebook.com/"><i class="fab fa-twitter-square fa-3x text-white mx-2"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-facebook-square fa-3x text-white mx-2"></i></a>
       </div>
     </div>
   </footer>
-  <!--Bootstrap Bundle con Popper-->
+
+  <!--Bootstrap 5.1.3 Bundle con Popper-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
   <!--Mi scirpt-->
   <script src="assets/js/script.js"></script>
 </body>
-
 </html>
