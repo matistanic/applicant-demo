@@ -106,7 +106,7 @@ body {
     height: 800px;
 }
 #card-bg {
-    background-image: url("./img/background-card2.jpg");
+    background-image: url("../img/background-card2.jpg");
     background-repeat: no-repeat;
     /* width: 100%; */
     background-size: cover;
