@@ -1,6 +1,6 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: black;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: white;
 }
 .navbar {
     position: fixed;
@@ -8,6 +8,7 @@ body {
     z-index:10;
     background: none;
     width:100%;
+    height: 100px;
 }
 .carousel {
     top: 0;
@@ -20,7 +21,7 @@ body {
     position:relative;
 }
 .carousel .carousel-item {
-    height: 900px;
+    height: 700px;
 } 
 .carousel-item img {
     position: absolute;
@@ -33,48 +34,93 @@ body {
     height: 40px;
 }
 .footer-text {
-    font-weight: 700;
-    display: inline-flex;
-    margin-left: 100px;
+    /* display: inline-flex; */
+    /* margin-left: 100px; */
+    text-align: center;
+    padding-top: 15px;
 }
-.footer-list {
+/* .footer-list {
     list-style: none;
     text-decoration: none;
     display: inline-block;  
     position: relative;
     display: flex;
     padding-left: 60%;
-}
+} */
 #quienes-somos {
     margin: 50px 0;
 }
 #destacados {
     margin: 50px 0;
 }
+#final {
+    padding-bottom: 30px;
+    padding-top: 150px;
+    height: 550px;
+    background-color: rgb(12, 45, 85) !important;
+    text-align: center;
+    /* position: relative; */
+    /* display: flex; */
+}
+/* #final:before {
+        content:"";
+        background-color: rgb(12, 45, 85);
+        position: absolute;
+        height: 100%;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        width: 100vw;
+        margin-left: -50%;
+        transform: translateX(-50%);
+        z-index: -1;
+} */
 #footer {
-    display: flex;
+    background-color: rgb(12, 45, 85);
+    height: 100px;
 }
 .card {
+    background-color: rgb(12, 45, 85);
     height: 100%; 
+    opacity: .8;
+    /* margin-top: 50px; */
+    /* margin-bottom: 20px; */
+    /* padding-top: 50px; */
+}
+.only-card {
+    background-color: rgb(12, 45, 85);
+    height: 100%; 
+    opacity: .8;
+    margin-top: 10%;
+    /* margin-top: 50px; */
+    /* margin-bottom: 20px; */
+    /* padding-top: 50px; */
+}
+#cards-bg {
+    background-image: url("../img/background-cards.jpg");
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    background-size: cover;
+    height: 800px;
+}
+#card-bg {
+    background-image: url("../img/background-card2.jpg");
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    background-size: cover;
+    height: 800px;
 }
 .card-img-top {
     width: 100%;
     height: 20vw;
     object-fit: cover;
 }
-.modal-content {
-    background-color: black;
-    color: aqua;
-}
-.mipopover {
-    background-color: black;
-    color: aqua;
-}
 .navbar-toggler .navbar-toggler-icon {
     background-color: aqua;
     opacity: 0.3;
 }
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
     .footer-text {
         font-weight: 700;
         display: inline-flex;
@@ -118,4 +164,4 @@ body {
         display: flex;
         padding-left: 40%;
     }
-}
+} */

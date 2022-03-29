@@ -3,14 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Viajes Chile</title>
+  <title>Applicant AI</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--CSS de Bootstrap 5.1.3-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!--Google Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
   <!--Font Awesome-->
   <script src="https://kit.fontawesome.com/dc56637ee3.js" crossorigin="anonymous"></script>
 
@@ -22,23 +24,26 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg px-5">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#"><img src="assets/img/viajes.svg" style="height: 40px;" alt="Logo Viajes Chile">Viajes Chile</a>
+      <a class="navbar-brand text-white" href="#"><img src="assets/img/logo.png" style="height: 40px;" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#quienes-somos">Quienes Somos</a>
+            <a class="nav-link text-white fw-bold" href="#quienes-somos">Quienes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#destacados">Destacados</a>
+            <a class="nav-link text-white fw-bold" href="#destacados">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#contacto">Contacto</a>
+            <a class="nav-link text-white fw-bold" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item ms-2">
+            <button class="btn btn-outline-info fw-bold" type="submit">Inicia sesión</button>
           </li>
         </ul>
       </div>
@@ -51,13 +56,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/carousel1.jpg" class="d-block w-100 img-fluid" alt="...">
+          <img src="assets/img/carrusel1.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 700px">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/carousel2.jpg" class="d-block w-100 img-fluid" alt="...">
+          <img src="assets/img/carrusel2.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 700px">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/carousel3.jpg" class="d-block w-100 img-fluid" alt="...">
+          <img src="assets/img/carrusel3.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 700px">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -73,122 +78,163 @@
 
   <!-- header sección quienes somos, se oculta en tamaños small -->
   <header class="hero">
-    <section id="quienes-somos" class="container-fluid py-3 px-5 text-center d-none d-md-block">
-      <div>
-        <h2 class="text-white">¿Quiénes Somos?</h2>
-
-        <!-- botón modal -->
-        <a href="#myModal" class="btn btn-lg btn-info text-white" data-bs-toggle="modal">Aquí te contamos más</a>
- 
-        <!-- contenido modal -->
-        <div id="myModal" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Viajes Chile</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Somos la mejor agencia turística para conocer Chile, además como puedes ver también tenemos la mejor página web del mundo, contrata nuestros servicios y nunca te arrepentirás.</p>
-                        <p class="text-secondary"><small>La humildad no es lo nuestro</small></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn btn-outline-info" data-bs-dismiss="modal">Volver atrás</button>
-  
-                        <!-- popover -->
-                        <button type="button" class="btn btn-outline-info" data-bs-toggle="popover" title="Es muy sencillo" data-bs-content="anda a la sección Contacto y déjanos tu mail">quiero saber más</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div>
+      <section id="quienes-somos" class="container-fluid py-3 px-5 text-center d-none d-md-block">
+        <h2>Nuestros Servicios</h2>
+        
         <hr class="bg-info" style="height: 2px">
+      </section>
  
+      <section id="cards-bg">
+        <div class="row cards-bg">
+          <div class="col-4 my-5">
+            <div class="card text-white mb-3 mx-auto" style="max-width: 50%;">
+              <div class="card-header text-center"><i class="fa-solid fa-2x fa-sitemap"></i></div>
+              <div class="card-body">
+                <h5 class="card-title text-center mb-3 fw-bold">Flexibilidad en el Proceso</h5>
+                <p class="card-text text-center">Con un sistema que divide los procesos en selección de etapas personalizables. Cada proceso puede ser diferente o crear plantillas reutilizables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-5">
+            <div class="card text-white mb-3 mx-auto" style="max-width: 50%;">
+              <div class="card-header text-center"><i class="fa-solid fa-2x fa-user"></i></div>
+              <div class="card-body">
+                <h5 class="card-title text-center mb-3 fw-bold">Fit Cultural</h5>
+                <p class="card-text text-center">El módulo de Fit Cultural sirve para evaluar tanto empleados como candidatos en 7 factores fundamentales, y utilizando un algoritmo inteligente hace el ranking de los perfiles que mejor se adaptan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-5">
+            <div class="card text-white mb-3 mx-auto" style="max-width: 50%;">
+              <div class="card-header text-center"><i class="fa-solid fa-2x fa-globe"></i></div>
+              <div class="card-body">
+                <h5 class="card-title text-center mb-3 fw-bold">Incorporación Digital</h5>
+                <p class="card-text text-center">A través de la plataforma puede realizar todo el proceso de admisión de candidatos, crear modelos para cualquier cargo incluyendo los documentos necesarios para la contratación.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row cards-bg">
+          <div class="col-4 my-5">
+            <div class="card text-white mb-3 mx-auto" style="max-width: 50%;">
+              <div class="card-header text-center"><i class="fa-solid fa-2x fa-video"></i></div>
+              <div class="card-body">
+                <h5 class="card-title text-center mb-3 fw-bold">Videoconferencia</h5>
+                <p class="card-text text-center">Con el módulo de videoconferencias podrá realizar entrevistas a uno o más candidatos, con la gran ventaja de poder grabar fácilmente la entrevista para poder compartirla o revisarla.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-5">
+            <div class="card text-white mb-3 mx-auto" style="max-width: 50%;">
+              <div class="card-header text-center"><i class="fa-regular fa-2x fa-file"></i></div>
+              <div class="card-body">
+                <h5 class="card-title text-center mb-3 fw-bold">Creación de Test</h5>
+                <p class="card-text text-center">Nuestra plataforma incluye varias pruebas listas para utilizar, y también permite al reclutador crear sus propias pruebas con notas de corte y tiempos de respuesta adaptables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-5">
+            <div class="card text-white mb-3 mx-auto" style="max-width: 50%;">
+              <div class="card-header text-center"><i class="fa-solid fa-2x fa-earth-americas"></i></div>
+              <div class="card-body">
+                <h5 class="card-title text-center mb-3 fw-bold">Reclutamiento Nacional e Internacional</h5>
+                <p class="card-text text-center">Podrá compartir sus ofertas de trabajo a través de diferentes canales tales como: blogs, universidades, municipales, sitios pagados y gratuitos, incluyendo portales internacionales en caso de ser necesario.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- columnas de texto con íconos y tooltip-->
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-4">
             <button type="button" class="btn btn-info text-white tultip" data-bs-toggle="tooltip" title="Viaja en primera clase!"><i class="fa-solid fa-2x fa-plane"></i></button>
-            <p class="text-start text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
+            <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
           </div>
           <div class="col-4">
-              <p class="text-start text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
+              <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
               <button type="button" class="btn btn-info text-white tultip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Agarra tus maletas!"><i class="fa-solid fa-2x fa-suitcase"></i></button>
           </div>
           <div class="col-4">
               <button type="button" class="btn btn-info text-white tultip" data-bs-toggle="tooltip" title="No pierdas más tiempo!"><i class="fa-solid fa-2x fa-clock-rotate-left"></i></button>
-              <p class="text-start text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
+              <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et leo quis elit tempor consequat. Suspendisse eleifend fermentum risus vel aliquam. Sed ullamcorper luctus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent porta magna eu ipsum eleifend, in aliquam leo viverra. In sit amet condimentum dui. Aenean eu maximus sapien, in elementum dolor. Curabitur fringilla tempor dapibus. Integer a erat semper, mattis metus id, dictum sem. Vivamus sodales ex sed urna placerat, non varius neque ultricies. Suspendisse quis iaculis eros. Cras suscipit orci tortor, ut mollis diam euismod sit amet. Vivamus eu rutrum nisi, at vestibulum mi.</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
   </header>
   
-  <!-- cards responsivas -->
-  <section id="destacados" class="container-fluid py-3 px-5 text-center text-white">
-    <div>
-        <h2>Destacados</h2>
-        <hr class="bg-info" style="height: 2px">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 my-5">
-              <div class="card">
-                <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                <div class="card-body bg-info">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 my-5">
-              <div class="card">
-                <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-                <div class="card-body bg-info">
-                  <h5 class="card-title">Consectetur adipisicing elit</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 my-5">
-              <div class="card">
-                <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-                <div class="card-body bg-info">
-                  <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 my-5">
-              <div class="card">
-                <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-                <div class="card-body bg-info">
-                  <h5 class="card-title">Ut enim ad minim veniam</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-              </div>        
-            </div>
-        </div>
-    </div>
-  </section>
 
   <!-- seccion contacto con typeform -->
-  <section id="contacto" class="container-fluid text-center text-white my-5 px-5">
-    <h2>Contacto</h2>
+  <section id="contacto" class="container-fluid text-center my-5 px-5">
+    <h2>La herramienta de selección más completa y fácil de usar.</h2>
     <hr class="bg-info" style="height: 2px">
-    <div data-tf-widget="c0THmO5r" 
-    data-tf-iframe-props="title=Prueba HTML" 
-    data-tf-medium="snippet" 
-    style="width:100%;height:400px;"></div>
-    <script src="//embed.typeform.com/next/embed.js"></script>
+    <div class="row">
+      <div class="col-6">
+        <img src="assets/img/herramienta.jpg" alt="" class="mt-5">
+      </div>
+      <div class="col-6 mt-5">
+        <h3 class="text-start">
+          A través de nuestra ATS es posible crear solicitudes de vacantes, personalizar y automatizar las etapas de los procesos, difundir las ofertas de empleo en diversos portales o fuentes de reclutamiento, aplicar y/o crear tests de conocimientos específicos, pruebas de personalidad y Fit Cultural.
+        </h3>
+        <br>
+        <h3 class="text-start">
+          Además nuestra plataforma permite crear y analizar vídeo entrevistas, videoconferencias para procesos individuales y masivos,  compartir los finalistas con los responsables de los procesos, analizar los informes para mejorar la calidad de contratación y realizar el ingreso digital del colaborador.
+        </h3>
+      </div>
+  </section>
+
+  <section id="card-bg">
+    <div class="row text-center align-items-center">
+      <div class="my-5">
+        <div class="only-card text-white mb-3 mx-auto mt-5 justify-content-center" style="max-width: 40%;">
+          <div class="card-body">
+            <h2 class="card-title mb-3 fw-bold">SOLICITA TU DEMO GRATIS!</h2>
+            <h4 class="card-text">Podras probar algunas funcionalidades de nuestro software.</h4>
+              <div class="">
+                <button class="btn btn-outline-info fw-bold" type="submit">Demo Gratis</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <section id="final" class="text-white">
+    <div class="row">
+      <div class="col-3">
+        <ul style="list-style-type:none">
+          <h3 class="fw-bold mb-4">Servicios</h3>
+          <li class="my-2">Gestión de Procesos</li>
+          <li class="my-2">Test y Pruebas de Conocimiento Online</li>
+          <li class="my-2">Videoentrevistas</li>
+          <li class="my-2">Videoconferencias en vivo</li>
+          <li class="my-2">Incorporación Digital</li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <ul style="list-style-type:none">
+          <h3 class="fw-bold mb-4">Encuéntranos</h3>
+          <h5 class="my-2">Dirección</h5>
+          <p class="my-2">La capitanía 80 of. s05, Las Condes, <br> Santiago, Chile.</p>
+          <h5 class="my-2">Horario</h5>
+          <p class="my-2">Lunes a viernes: de 9:00 a 18:00 hs.</p>
+        </ul>
+      </div>
+      <div class="col-3">
+          <a href="https://github.com/"><i class="fab fa-github-square fa-3x text-white mx-2"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa fa-linkedin-square fa-3x text-white mx-2"></i></a>
+          <a href="https://www.twitter.com/"><i class="fab fa-twitter-square fa-3x text-white mx-2"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-facebook-square fa-3x text-white mx-2"></i></a>
+      </div>
+    </div>
+
   </section>
 
   <!-- footer con iconos -->
-  <footer id="footer" class="bg-info text-center text-light py-3">
+  <footer id="footer" class="text-light">
       <div>
-        <h2 class="footer-text">Viajes Chile</h2>
-      </div>
-      <div class="footer-list">
-          <a href="https://github.com/matistanic"><i class="fab fa-github-square fa-3x text-white mx-2"></i></a>
-          <a href="https://www.facebook.com/"><i class="fa fa-linkedin-square fa-3x text-white mx-2"></i></a>
-          <a href="https://www.facebook.com/"><i class="fab fa-twitter-square fa-3x text-white mx-2"></i></a>
-          <a href="https://www.instagram.com/"><i class="fab fa-facebook-square fa-3x text-white mx-2"></i></a>
+        <h5 class="footer-text">© 2020 Applicant AI All Rights Reserved.</h5>
       </div>
     </div>
   </footer>
