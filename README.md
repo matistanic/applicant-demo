@@ -1,8 +1,8 @@
 
  # README
-# Prueba Fundamentos Desarrollo Web Talento Digital
+# APPLICANT DEMO
 
-Espero que la disfruten.
+Espero que lo disfruten.
 
 ## Dominio
-* https://matistanic.github.io/pruebahtml/ 
+* https://matistanic.github.io/applicant-demo/ 
